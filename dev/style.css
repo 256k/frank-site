@@ -175,3 +175,61 @@ table {
 td,
 th {
   padding: 0; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.wrapper {
+  width: 100%;
+  height: 100%; }
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  height: 100%; }
+
+.hero {
+  background-image: url("http://lorempixel.com/1000/1200/abstract");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh; }
+
+.hero-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%; }
+
+.hero-info {
+  color: white;
+  width: 40%; }
+  .hero-info h1 {
+    margin: 0; }
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #333; }
+
+.gallery {
+  border: 1px solid #333;
+  height: 100vh;
+  width: 100%; }

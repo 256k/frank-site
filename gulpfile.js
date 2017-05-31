@@ -23,7 +23,9 @@ gulp.task('browser-sync', function() {
 gulp.task('sass-prod', function() {
   return gulp.src('./dev/sass/*.scss')
   .pipe(sass({
-    includePaths: './node_modules/bootstrap-sass/assets/stylesheets'
+    includePaths: ['./node_modules/font-awesome/scss',
+    './node_modules/bootstrap-sass/assets/stylesheets'
+  ]
   }))
   .pipe(autoprefixer())
   .pipe(rename('style.css'))
